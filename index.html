@@ -24,6 +24,7 @@
       /* theme color */
       :root {
         --theme: #734296;
+        --theme2: #f27e21;
       }
 
       /* vertical id card */
@@ -52,6 +53,14 @@
         background-position: top center;
         background-size: cover;
         background-repeat: no-repeat;
+      }
+      .profile-image-8th-card{
+        width: 100%;
+    height: 212px;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
       }
       .id-name {
         font-family: "Montserrat", sans-serif;
@@ -136,6 +145,38 @@
         height: 60px;
         bottom: 0;
       }
+      .svg-shape-3 {
+        position: absolute;
+        top: 29%;
+        height: 25%;
+        width: 100%;
+        z-index: -1;
+      }
+      .svg-shape-3-a {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+        height: 31%;
+        background-color: var(--theme);
+      }
+      .svg-shape-4 {
+        position: absolute;
+        height: 100px;
+        top: 20%;
+        z-index: -1;
+        width: 100%;
+      }
+      .svg-shape-4 svg {
+        position: absolute;
+      }
+      .svg-shape-5 {
+        position: absolute;
+        height: 50px;
+        top: 165px;
+        z-index: 0;
+        width: 100%;
+      }
       .phn-align {
         display: flex;
         right: 0;
@@ -194,7 +235,7 @@
     <div class="container-fluid my-5">
       <div class="row">
         <!-- first card -->
-        <div class="col-sm-6">
+        <div class="col-sm-4">
           <div class="id-card-v">
             <div class="svg-shape-1">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -224,7 +265,7 @@
               class="profile-image"
               style="
                 background-image: url(./images/profile.jpeg);
-                margin: 20px auto;
+                margin: 30px auto 10px auto;
               "
             ></div>
             <div class="id-name">Your name here</div>
@@ -247,7 +288,7 @@
           </div>
         </div>
         <!-- Second card -->
-        <div class="col-sm-6">
+        <div class="col-sm-4">
           <div class="id-card-v">
             <div class="svg-shape-2-a">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -295,41 +336,46 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="row">
+
         <!-- third card -->
-        <div class="col-sm-6">
-          <div class="id-card-h">
+        <div class="col-sm-4">
+          <div class="id-card-v">
             <div
               class="company-logo"
-              style="background-image: url(./images/logo2.png); margin: 10px"
+              style="
+                background-image: url(./images/demo-logo.png);
+                margin: 5px auto;
+              "
             ></div>
-            <div class="name-align">
-              <div class="id-name">Your name here</div>
-              <div class="id-title">Health care assistant</div>
-              <p class="id-number">ID 23bh667</p>
-              <p class="id-number2">NRM 7868883</p>
+            <div class="svg-shape-3-a"></div>
+            <div class="svg-shape-3">
+              <svg viewBox="0 0 1200 700">
+                <path d="M1,40 Q600,450 1200,40" fill=" var(--theme)"></path>
+              </svg>
             </div>
             <div
               class="profile-image"
               style="
                 background-image: url(./images/profile.jpeg);
-                float: right;
-                margin: 20px 10px;
+                margin: 20px auto 5px auto;
+                border: 4px solid white;
               "
             ></div>
+            <div class="id-name">Your name here</div>
+            <div class="id-title">Health care assistant</div>
+
+            <p class="id-number">ID 23bh667</p>
+            <p class="id-number2">NRM 7868883</p>
             <div class="id-footer" style="background: transparent; z-index: -1">
               <div
                 class="qr-code"
                 style="background-image: url(./images/qrcode.jpg)"
               ></div>
             </div>
-            <div class="h-card-line-1"></div>
-            <div class="h-card-line-2"></div>
           </div>
         </div>
         <!-- forth card -->
-        <div class="col-sm-6">
+        <div class="col-sm-4">
           <div class="id-card-h">
             <div class="svg-shape-2-a">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -375,39 +421,148 @@
         </div>
         <!-- fifth card -->
 
-        <div class="id-card-h">
-          <div
-            class="profile-image"
-            style="
-              background-image: url(./images/profile.jpeg);
-              margin: 18% 15px;
-            "
-          ></div>
-          <div
-            class="company-logo"
-            style="
-              background-image: url(./images/demo-logo.png);
-              margin: 10px;
-              position: absolute;
-              top: 0;
-              left: 50%;
-              margin-left: -50px;
-            "
-          ></div>
-          <div class="name-align" style="left: 65%; top: 35%">
-            <div class="id-name">Your name here</div>
-            <div class="id-title">Health care assistant</div>
-            <p class="id-number">ID 23bh667</p>
-            <p class="id-number2">NRM 7868883</p>
-          </div>
-          <div class="id-footer" style="background: transparent; z-index: -1">
+        <div class="col-sm-4">
+          <div class="id-card-h">
             <div
-              class="qr-code"
-              style="background-image: url(./images/qrcode.jpg); right: 0"
+              class="profile-image"
+              style="
+                background-image: url(./images/profile.jpeg);
+                margin: 18% 15px;
+              "
             ></div>
+            <div
+              class="company-logo"
+              style="
+                background-image: url(./images/demo-logo.png);
+                margin: 10px;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                margin-left: -50px;
+              "
+            ></div>
+            <div class="name-align" style="left: 65%; top: 35%">
+              <div class="id-name">Your name here</div>
+              <div class="id-title">Health care assistant</div>
+              <p class="id-number">ID 23bh667</p>
+              <p class="id-number2">NRM 7868883</p>
+            </div>
+            <div class="id-footer" style="background: transparent; z-index: -1">
+              <div
+                class="qr-code"
+                style="background-image: url(./images/qrcode.jpg); right: 0"
+              ></div>
+            </div>
           </div>
         </div>
+        <!-- sixth card -->
+        <div class="col-sm-4">
+          <div class="id-card-h">
+            <div
+              class="company-logo"
+              style="background-image: url(./images/logo2.png); margin: 10px"
+            ></div>
+            <div class="name-align">
+              <div class="id-name">Your name here</div>
+              <div class="id-title">Health care assistant</div>
+              <p class="id-number">ID 23bh667</p>
+              <p class="id-number2">NRM 7868883</p>
+            </div>
+            <div
+              class="profile-image"
+              style="
+                background-image: url(./images/profile.jpeg);
+                float: right;
+                margin: 20px 10px;
+              "
+            ></div>
+            <div class="id-footer" style="background: transparent; z-index: -1">
+              <div
+                class="qr-code"
+                style="background-image: url(./images/qrcode.jpg)"
+              ></div>
+            </div>
+            <div class="h-card-line-1"></div>
+            <div class="h-card-line-2"></div>
+          </div>
+        </div>
+        
+        <!-- seventh card -->
+        <div class="col-sm-4">
+          <div class="id-card-v">
+            <div
+              class="company-logo"
+              style="
+                background-image: url(./images/demo-logo.png);
+                margin: 5px auto;
+              "
+            ></div>
+            <div class="svg-shape-4">
+              <svg viewBox="0 0 1200 1000" style="z-index: 2">
+                <polygon
+                  points="1100,200 0,350 0,1000"
+                  fill=" var(--theme)"
+                ></polygon>
+              </svg>
+              <svg viewBox="0 0 1200 1000" style="z-index: 1">
+                <polygon
+                  points="100,0 1200,150 1200,900"
+                  fill=" var(--theme2)"
+                ></polygon>
+              </svg>
+            </div>
+            
+        <div
+          class="profile-image"
+          style="
+            background-image: url(./images/profile.jpeg);
+            margin:  5px auto;
+            border: 4px solid white;
+          "
+        ></div>
+        <div class="id-name" style="color: black;">Your name here</div>
+        <div class="id-title">Health care assistant</div>
+
+        <p class="id-number">ID 23bh667</p>
+        <p class="id-number2">NRM 7868883</p>
+        <div class="id-footer" style="background: transparent; z-index: -1">
+          <div
+            class="qr-code"
+            style="background-image: url(./images/qrcode.jpg)"
+          ></div>
+        </div>
       </div>
+    </div>
+        <!-- eigth card -->
+        <div class="col-sm-4">
+          <div class="id-card-v">
+            <div
+              class="company-logo"
+              style="
+                background-image: url(./images/demo-logo.png);
+                margin: 5px auto;
+                position: absolute;
+              "
+            ></div>
+            <div class="profile-image-8th-card" style="background-image: url(./images/profile.jpeg);
+            border-radius: 0 0 50% 0%;
+            border-bottom: 15px groove #734296;">
+
+            </div>
+        
+        <div class="id-name" >Your name here</div>
+        <div class="id-title">Health care assistant</div>
+
+        <p class="id-number">ID 23bh667</p>
+        <p class="id-number2">NRM 7868883</p>
+        <div class="id-footer" style="background: transparent; z-index: -1">
+          <div
+            class="qr-code"
+            style="background-image: url(./images/qrcode.jpg)"
+          ></div>
+        </div>
+      </div>
+    </div>
     </div>
   </body>
 </html>
