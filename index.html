@@ -67,7 +67,7 @@
         position: absolute;
         bottom: 0;
         width: 100%;
-        height: 53px;
+        height: 20px;
         background-color: #734296;
         padding: 3px;
       }
@@ -81,6 +81,7 @@
         margin-left: 4px;
         color: white;
         line-height: 14px;
+        display: none;
       }
       .id-phone-holder {
         display: flex;
@@ -96,6 +97,8 @@
       .qr-code {
         height: 50px;
         float: right;
+        position: absolute;
+        bottom: 0;
         width: 50px;
         background-size: 90%;
         background-repeat: no-repeat;
@@ -120,7 +123,7 @@
         position: absolute;
         z-index: -1;
         width: 100%;
-        height: 93px;
+        height: 60px;
         bottom: 0;
       }
       .phone-icon {
@@ -214,14 +217,14 @@
               ></div>
               <p>+1 2294 89 89</p>
             </div>
-            <div class="id-footer">
-              <div class="id-contact">
+            <div class="id-footer" style="background-color: transparent">
+              <!-- <div class="id-contact">
                 <span>
                   S1, Worth Corner Business Center Turners Hill Road Crawley,
                   RH10 7SL England.
                 </span>
                 .
-              </div>
+              </div> -->
               <div
                 class="qr-code"
                 style="background-image: url(./images/qrcode.jpg)"
@@ -275,12 +278,6 @@
               <p>+1 2294 89 89</p>
             </div>
             <div class="id-footer">
-              <div class="id-contact">
-                <span>
-                  S1, Worth Corner Business Center Turners Hill Road Crawley,
-                  RH10 7SL England.
-                </span>
-              </div>
               <div
                 class="qr-code"
                 style="background-image: url(./images/qrcode.jpg)"
@@ -319,32 +316,11 @@
                 margin: 10px;
               "
             ></div>
-            <div
-              class="id-footer"
-              style="
-                background: transparent;
-                z-index: -1;
-                border-top: 1px dashed #734296;
-              "
-            >
+            <div class="id-footer" style="background: transparent; z-index: -1">
               <div
                 class="qr-code"
-                style="background-image: url(./images/qrcode.jpg); float: left"
+                style="background-image: url(./images/qrcode.jpg)"
               ></div>
-              <div
-                class="id-contact"
-                style="
-                  margin-left: 10px;
-                  color: #734296;
-                  height: 50px;
-                  width: 50%;
-                "
-              >
-                <span>
-                  S1, Worth Corner Business Center Turners Hill Road Crawley,
-                  RH10 7SL England.
-                </span>
-              </div>
             </div>
             <div class="h-card-line-1"></div>
             <div class="h-card-line-2"></div>
@@ -374,54 +350,72 @@
               class="profile-image"
               style="
                 background-image: url(./images/profile.jpeg);
-                margin: 5px auto;
+                margin: 15px auto;
               "
             ></div>
             <div class="id-name">Mira koisarinova</div>
             <div class="id-title">Health care assistant</div>
 
+            <div class="id-footer" style="background: transparent; z-index: -1">
+              <div
+                class="qr-code"
+                style="background-image: url(./images/qrcode.jpg)"
+              ></div>
+            </div>
             <div
-              class="id-footer"
+              class="id-phone-holder"
               style="
-                background: transparent;
-                z-index: -1;
-                border-top: 1px dashed #734296;
+                position: absolute;
+                right: 10px;
+                bottom: 2px;
+                justify-content: flex-end;
               "
             >
               <div
-                class="qr-code"
-                style="background-image: url(./images/qrcode.jpg); float: left"
+                class="phone-icon"
+                style="background-image: url(./images/call-icon.png)"
               ></div>
-              <div
-                class="id-contact"
-                style="
-                  margin-left: 10px;
-                  color: #734296;
-                  height: 50px;
-                  width: 50%;
-                "
-              >
-                <span>
-                  S1, Worth Corner Business Center Turners Hill Road Crawley,
-                  RH10 7SL England.
-                </span>
-              </div>
-              <div
-                class="id-phone-holder"
-                style="
-                  position: absolute;
-                  right: 10px;
-                  bottom: 2px;
-                  justify-content: flex-end;
-                "
-              >
-                <div
-                  class="phone-icon"
-                  style="background-image: url(./images/call-icon.png)"
-                ></div>
-                <p>+1 2294 89 89</p>
-              </div>
+              <p>+1 2294 89 89</p>
             </div>
+          </div>
+        </div>
+        <!-- fifth card -->
+
+        <div class="id-card-h">
+          <div
+            class="profile-image"
+            style="
+              background-image: url(./images/profile.jpeg);
+              margin: 20% 15px;
+            "
+          ></div>
+          <div
+            class="company-logo"
+            style="
+              background-image: url(./images/company-logo.jpeg);
+              margin: 10px;
+              position: absolute;
+              top: 0;
+              left: 50%;
+              margin-left: -30px;
+            "
+          ></div>
+          <div class="name-align" style="left: 65%; top: 45%">
+            <div class="id-name">Mira koisarinova</div>
+            <div class="id-title">Health care assistant</div>
+            <div class="id-phone-holder">
+              <div
+                class="phone-icon"
+                style="background-image: url(./images/call-icon.png)"
+              ></div>
+              <p>+1 2294 89 89</p>
+            </div>
+          </div>
+          <div class="id-footer" style="background: transparent; z-index: -1">
+            <div
+              class="qr-code"
+              style="background-image: url(./images/qrcode.jpg); right: 0"
+            ></div>
           </div>
         </div>
       </div>
