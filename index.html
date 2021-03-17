@@ -136,12 +136,22 @@
         height: 60px;
         bottom: 0;
       }
+      .phn-align {
+        display: flex;
+        right: 0;
+        position: absolute;
+        margin: 3px auto;
+        bottom: 0;
+        width: 100px;
+        justify-content: center;
+      }
       .phone-icon {
         margin: 3px;
         height: 10px;
         width: 10px;
         float: left;
         background-size: 100%;
+        background-image: url(./images/call-icon.png);
       }
       /* horizontal id card */
       .id-card-h {
@@ -347,15 +357,19 @@
             ></div>
             <div class="id-name">Your name here</div>
             <div class="id-title">Health care assistant</div>
-
+            <p class="id-number">ID 23bh667</p>
+            <p class="id-number2">NRM 7868883</p>
             <div class="id-footer" style="background: transparent; z-index: -1">
               <div
                 class="qr-code"
                 style="background-image: url(./images/qrcode.jpg)"
               ></div>
             </div>
-            <p class="id-number">ID 23bh667</p>
-            <p class="id-number2">NRM 7868883</p>
+
+            <div class="phn-align">
+              <div class="phone-icon"></div>
+              <p class="id-number">ID 23bh667</p>
+            </div>
           </div>
         </div>
         <!-- fifth card -->
